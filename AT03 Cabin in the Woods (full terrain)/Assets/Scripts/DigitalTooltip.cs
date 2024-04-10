@@ -15,6 +15,9 @@ public class DigitalTooltip : InteractableObject
     [Tooltip("This is the audio clip that will play when notes are opened/closed.")]
     [SerializeField] private AudioClip interactClip;
 
+    // Stores the ImageFix script to the variable imageFix
+    private ImageFix imageFix;
+
     private Image imageRenderer; //should be a child of this object
     private GameObject textObject; //should be a child of the image renderer object
     private AudioSource audioSource;
@@ -40,6 +43,9 @@ public class DigitalTooltip : InteractableObject
                 Debug.LogWarning($"{imageRenderer.name} should have a UI Text as a child!");
             }
         }
+        
+        // Gets the ImageFix script from the children of the object and sets it to imageFix 
+        imageFix = GetComponentInChildren<ImageFix>();
     }
 
     // Start is called before the first frame update
@@ -79,6 +85,8 @@ public class DigitalTooltip : InteractableObject
             Interaction.Instance.CurrentTooltip = this;
             if (imageRenderer != null)
             {
+                // Calls the object, then rectTransform, and then sizeDelta and sets sizeDelta to the ImageSizeOnChange function
+                imageRenderer.rectTransform.sizeDelta = imageFix.ImageSizeOnChange;
                 imageRenderer.sprite = background;
             }
             if (textObject != null)
@@ -106,6 +114,8 @@ public class DigitalTooltip : InteractableObject
             if (imageRenderer != null)
             {
                 imageRenderer.sprite = icon;
+                // Calls the object, then rectTransform, and then sizeDelta and sets sizeDelta to the OriginalSize function
+                imageRenderer.rectTransform.sizeDelta = imageFix.OriginalSize;
             }
             if (textObject != null)
             {
