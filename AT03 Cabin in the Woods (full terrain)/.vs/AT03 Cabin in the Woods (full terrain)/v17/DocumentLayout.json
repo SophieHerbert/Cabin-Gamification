@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\TAFE\\GitHub\\Cabin-Gamification\\AT03 Cabin in the Woods (full terrain)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68181854-98D4-A141-4355-434EEDA75F4D}|Assembly-CSharp.csproj|C:\\TAFE\\GitHub\\Cabin-Gamification\\AT03 Cabin in the Woods (full terrain)\\assets\\scripts\\digitaltooltip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68181854-98D4-A141-4355-434EEDA75F4D}|Assembly-CSharp.csproj|c:\\tafe\\github\\cabin-gamification\\at03 cabin in the woods (full terrain)\\assets\\scripts\\digitaltooltip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68181854-98D4-A141-4355-434EEDA75F4D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\digitaltooltip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68181854-98D4-A141-4355-434EEDA75F4D}|Assembly-CSharp.csproj|c:\\tafe\\github\\cabin-gamification\\at03 cabin in the woods (full terrain)\\assets\\scripts\\imagefix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68181854-98D4-A141-4355-434EEDA75F4D}|Assembly-CSharp.csproj|C:\\TAFE\\GitHub\\Cabin-Gamification\\AT03 Cabin in the Woods (full terrain)\\assets\\scripts\\imagefix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68181854-98D4-A141-4355-434EEDA75F4D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\imagefix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,8 +30,7 @@
               "RelativeToolTip": "Assets\\Scripts\\ImageFix.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAA1wBUAAABtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T14:17:47.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T14:17:47.338Z"
             },
             {
               "$type": "Document",
@@ -41,7 +40,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\DigitalTooltip.cs",
               "ToolTip": "C:\\TAFE\\GitHub\\Cabin-Gamification\\AT03 Cabin in the Woods (full terrain)\\Assets\\Scripts\\DigitalTooltip.cs",
               "RelativeToolTip": "Assets\\Scripts\\DigitalTooltip.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAABcAAAA",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAwwGsAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-09T13:58:45.893Z",
               "EditorCaption": ""
