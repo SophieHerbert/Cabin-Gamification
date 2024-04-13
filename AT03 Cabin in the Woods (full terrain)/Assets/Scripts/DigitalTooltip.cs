@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,7 @@ public class DigitalTooltip : InteractableObject
     [SerializeField] private Sprite background;
     [Tooltip("This is the audio clip that will play when notes are opened/closed.")]
     [SerializeField] private AudioClip interactClip;
+    [SerializeField] private AudioClip voiceOver;
 
     private Image imageRenderer; //should be a child of this object
     private GameObject textObject; //should be a child of the image renderer object
@@ -88,7 +90,10 @@ public class DigitalTooltip : InteractableObject
             if (audioSource != null && interactClip != null)
             {
                 audioSource.PlayOneShot(interactClip);
+                // Task.Delay(1000).ContinueWith(t => VoiceOverActivate(true));
+                StartCoroutine(VoiceOverActivate());
             }
+            
             return true;
         }
         return false;
@@ -114,9 +119,22 @@ public class DigitalTooltip : InteractableObject
             if (audioSource != null && interactClip != null)
             {
                 audioSource.PlayOneShot(interactClip);
+                StartCoroutine(VoiceOverActivate(false));
             }
             return true;
         }
         return false;
+    }
+    IEnumerator VoiceOverActivate(bool isActive = true)
+    {
+        yield return new WaitForSeconds(1);
+        if (isActive)
+        {
+            audioSource.PlayOneShot(voiceOver);
+        }
+        else 
+        {
+            audioSource.Stop();
+        }
     }
 }
