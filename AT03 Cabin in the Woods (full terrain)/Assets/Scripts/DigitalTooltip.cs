@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,10 +17,13 @@ public class DigitalTooltip : InteractableObject
     [Tooltip("This is the audio clip that will play when notes are opened/closed.")]
     [SerializeField] private AudioClip interactClip;
     [SerializeField] private AudioClip voiceOver;
+    [SerializeField] private Image voiceIcon;
 
+    // These lines declare private fields to hold references to components
     private Image imageRenderer; //should be a child of this object
     private GameObject textObject; //should be a child of the image renderer object
-    private AudioSource audioSource;
+    private AudioSource audioSource; // used to play audio clips 
+    private Coroutine voiceOverCoroutine; // manages the coroutine for voice-over
 
     //Awake is executed before the Start method
     private void Awake()
@@ -74,11 +78,14 @@ public class DigitalTooltip : InteractableObject
     {
         if (Interaction.Instance.CurrentTooltip != this)
         {
+            // Deactivate any currently active tooltip
             if (Interaction.Instance.CurrentTooltip != null)
             {
                 Interaction.Instance.CurrentTooltip.Deactivate();
             }
+            // Set this tooltip as the current one
             Interaction.Instance.CurrentTooltip = this;
+            // Set background sprit and activate text
             if (imageRenderer != null)
             {
                 imageRenderer.sprite = background;
@@ -87,11 +94,19 @@ public class DigitalTooltip : InteractableObject
             {
                 textObject.SetActive(true);
             }
+            // If there is an audio file attached to the object, play the interaction sound and start the voice-over coroutine
+            // (this makes sure the voiceover and interaction sound don't overlap each other)
             if (audioSource != null && interactClip != null)
             {
                 audioSource.PlayOneShot(interactClip);
                 // Task.Delay(1000).ContinueWith(t => VoiceOverActivate(true));
-                StartCoroutine(VoiceOverActivate());
+
+                // StopCoroutine is used so that the voiceover doesn't keep triggering when you spam click the interactable object
+                // (it basically stops the voiceover from overlapping with itself)
+                if (voiceOverCoroutine != null)
+                    StopCoroutine(voiceOverCoroutine);
+                // This is what starts the voiceover coroutine 
+                voiceOverCoroutine = StartCoroutine(VoiceOverActivate());
             }
             
             return true;
@@ -106,34 +121,51 @@ public class DigitalTooltip : InteractableObject
     public override bool Deactivate()
     {
         if (Interaction.Instance.CurrentTooltip == this)
-        {        
+        {      
+            // Clear the current tooltip
             Interaction.Instance.CurrentTooltip = null;
             if (imageRenderer != null)
             {
+                // Set icon sprite and deactivate the textbox/text 
                 imageRenderer.sprite = icon;
             }
             if (textObject != null)
             {
                 textObject.SetActive(false);
             }
+            // Stops the voiceover coroutine and plays the interaction sound
             if (audioSource != null && interactClip != null)
             {
+                if (voiceOverCoroutine != null)
+                    StopCoroutine(voiceOverCoroutine);
+                voiceOverCoroutine = StartCoroutine(VoiceOverActivate(false));
                 audioSource.PlayOneShot(interactClip);
-                StartCoroutine(VoiceOverActivate(false));
             }
             return true;
         }
         return false;
     }
+    // This coroutine manages the activation and deactivation of the voiceover audio
+    // When activated, it waits for a delay and then plays the voiceover clip
+    // When deactivated, it stops the audio
     IEnumerator VoiceOverActivate(bool isActive = true)
     {
-        yield return new WaitForSeconds(1);
         if (isActive)
         {
+            // Creates a delay before the voiceover starts
+            yield return new WaitForSeconds(1.8f);
+            voiceIcon.enabled = true;
+            // Turns the audio volume up to 2
+            audioSource.volume = 2;
             audioSource.PlayOneShot(voiceOver);
+            yield return new WaitForSeconds(voiceOver.length);
+            voiceIcon.enabled = false;
         }
         else 
         {
+            voiceIcon.enabled = false;
+            // Turns the audio volume back down to 1
+            audioSource.volume = 0.107f;
             audioSource.Stop();
         }
     }
