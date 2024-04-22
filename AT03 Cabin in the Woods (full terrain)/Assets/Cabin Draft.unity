@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3961132, g: 0.4342979, b: 0.49922478, a: 1}
+  m_IndirectSpecularColor: {r: 0.39587831, g: 0.43419307, b: 0.49911863, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -257,7 +257,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8a14f9b53c486b64ea9738b23fbbb516, type: 3}
     m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0
@@ -1019,7 +1019,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8a14f9b53c486b64ea9738b23fbbb516, type: 3}
     m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0
@@ -1099,7 +1099,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8a14f9b53c486b64ea9738b23fbbb516, type: 3}
     m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0
@@ -1178,7 +1178,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8a14f9b53c486b64ea9738b23fbbb516, type: 3}
     m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0
@@ -1236,7 +1236,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1.9, y: 0.8}
+  m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &218267771
 MonoBehaviour:
@@ -1258,7 +1258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: da2bc4782c79d9049a84e2c7681fa61f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5c2a46d3d5b3d949801be09ec748a8a, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1665,7 +1665,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -263.29, y: 155.21}
+  m_AnchoredPosition: {x: -263.48, y: 154.93}
   m_SizeDelta: {x: 2, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &260873796
@@ -1816,7 +1816,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.133
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3691,7 +3691,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.133
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4606,7 +4606,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.133
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4771,7 +4771,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.133
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6238,7 +6238,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4269b3f39c3372245a2e953ad66f05e3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6299,7 +6299,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792792946}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -6427,7 +6427,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: -0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -6481,7 +6481,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.5529412, b: 0.9217435, a: 0.60784316}
+      maxColor: {r: 0.5529412, g: 1, b: 0.9581435, a: 0.60784316}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -6545,7 +6545,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -12513,7 +12513,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.133
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12807,7 +12807,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4269b3f39c3372245a2e953ad66f05e3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12868,7 +12868,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063040454}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -12996,7 +12996,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: -0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -13050,7 +13050,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.5529412, b: 0.9217435, a: 0.60784316}
+      maxColor: {r: 0.5529412, g: 1, b: 0.9581435, a: 0.60784316}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -13114,7 +13114,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -18319,7 +18319,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4269b3f39c3372245a2e953ad66f05e3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18380,7 +18380,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142396653}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -18508,7 +18508,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: -0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -18562,7 +18562,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.5529412, b: 0.9217435, a: 0.60784316}
+      maxColor: {r: 0.5529412, g: 1, b: 0.9581435, a: 0.60784316}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -18626,7 +18626,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -23149,7 +23149,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4269b3f39c3372245a2e953ad66f05e3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23210,7 +23210,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179217441}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -23338,7 +23338,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: -0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -23392,7 +23392,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.5529412, b: 0.9217435, a: 0.60784316}
+      maxColor: {r: 0.5529412, g: 1, b: 0.9581435, a: 0.60784316}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -23456,7 +23456,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -28095,7 +28095,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4269b3f39c3372245a2e953ad66f05e3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28156,7 +28156,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222472089}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -28284,7 +28284,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: -0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -28338,7 +28338,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.5529412, b: 0.9217435, a: 0.60784316}
+      maxColor: {r: 0.5529412, g: 1, b: 0.9581435, a: 0.60784316}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -28402,7 +28402,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -33431,7 +33431,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4269b3f39c3372245a2e953ad66f05e3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33492,7 +33492,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235402792}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -33620,7 +33620,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: -0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -33674,7 +33674,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.5529412, b: 0.9217435, a: 0.60784316}
+      maxColor: {r: 0.5529412, g: 1, b: 0.9581435, a: 0.60784316}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -33738,7 +33738,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -38333,11 +38333,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 218267770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1.243, y: -0.598}
+  m_SizeDelta: {x: 2, y: 2}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1289461953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38359,11 +38359,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 300
+    m_Font: {fileID: 12800000, guid: 8a14f9b53c486b64ea9738b23fbbb516, type: 3}
+    m_FontSize: 200
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 3
+    m_BestFit: 1
+    m_MinSize: 0
     m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -38371,7 +38371,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "Welcome to the interactable cabin tour! \nYou can explore the house by
+    clicking on\n the sparkling waypoints. By clicking on the\n blue question marks,
+    you will be given some\n information about the property. \nPlease enjoy!"
 --- !u!222 &1289461954
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -38408,7 +38410,7 @@ Transform:
   m_GameObject: {fileID: 1345679658}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.912, y: 3.653, z: 4.606}
+  m_LocalPosition: {x: -0.912, y: 2.673, z: 4.606}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -38440,7 +38442,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.133
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -38733,7 +38735,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.133
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -40258,7 +40260,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.133
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -40378,7 +40380,6 @@ GameObject:
   - component: {fileID: 1762402354}
   - component: {fileID: 1762402353}
   - component: {fileID: 1762402352}
-  - component: {fileID: 1762402351}
   m_Layer: 5
   m_Name: Interactable Object #Welcome
   m_TagString: Untagged
@@ -40386,19 +40387,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1762402351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762402350}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de6f02e2e69695a44af505e01d4f6a29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  voiceOver: {fileID: 8300000, guid: 9f89181ae1b7c764c9268e818de3e212, type: 3}
 --- !u!82 &1762402352
 AudioSource:
   m_ObjectHideFlags: 0
@@ -40529,7 +40517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 48bbcf7324c861a4da47d5eba0e7ee39, type: 3}
-  background: {fileID: 21300000, guid: 9b54d903c68bd794d82ea8eef635309f, type: 3}
+  background: {fileID: 21300000, guid: e199602320560bd4f897923f05aba081, type: 3}
   interactClip: {fileID: 8300000, guid: 80b466515582b8d4aa9476e9a22db01c, type: 3}
   voiceOver: {fileID: 8300000, guid: 13220aabb98d48a4c9c0bf928ee764b6, type: 3}
   voiceIcon: {fileID: 794835398}
@@ -40604,7 +40592,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762402350}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -220.81}
+  m_LocalPosition: {x: 0, y: 0, z: -219.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -40613,7 +40601,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -262.31, y: 151.56287}
+  m_AnchoredPosition: {x: -263.256, y: 151.56287}
   m_SizeDelta: {x: 2, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1873738419
@@ -40670,7 +40658,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4269b3f39c3372245a2e953ad66f05e3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -40731,7 +40719,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873738419}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -40859,7 +40847,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: -0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -40913,7 +40901,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.5529412, b: 0.9217435, a: 0.60784316}
+      maxColor: {r: 0.5529412, g: 1, b: 0.9581435, a: 0.60784316}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -40977,7 +40965,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -45500,7 +45488,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4269b3f39c3372245a2e953ad66f05e3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45561,7 +45549,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899884642}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -45689,7 +45677,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: -0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -45743,7 +45731,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.5529412, b: 0.9217435, a: 0.60784316}
+      maxColor: {r: 0.5529412, g: 1, b: 0.9581435, a: 0.60784316}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -45807,7 +45795,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -50334,7 +50322,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8a14f9b53c486b64ea9738b23fbbb516, type: 3}
     m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0
@@ -50410,7 +50398,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4269b3f39c3372245a2e953ad66f05e3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50471,7 +50459,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941115350}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -50599,7 +50587,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: -0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -50653,7 +50641,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.5529412, b: 0.9217435, a: 0.60784316}
+      maxColor: {r: 0.5529412, g: 1, b: 0.9581435, a: 0.60784316}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -50717,7 +50705,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -56758,7 +56746,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.133
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -56921,7 +56909,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8a14f9b53c486b64ea9738b23fbbb516, type: 3}
     m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0

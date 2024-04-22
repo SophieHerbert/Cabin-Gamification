@@ -152,13 +152,17 @@ public class DigitalTooltip : InteractableObject
     {
         if (isActive)
         {
+            Debug.Log("Starting voice over coroutine.");
             // Creates a delay before the voiceover starts
             yield return new WaitForSeconds(1.8f);
             voiceIcon.enabled = true;
             // Turns the audio volume up to 2
             audioSource.volume = 2;
+            Debug.Log("Playing one shot for voice over coroutine.");
             audioSource.PlayOneShot(voiceOver);
             yield return new WaitForSeconds(voiceOver.length);
+
+            Debug.Log("Voice over finished.");
             voiceIcon.enabled = false;
         }
         else 
